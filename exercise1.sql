@@ -4,10 +4,10 @@ CREATE TABLE students (
 	last_name text Not Null,
 	date_of_birth date,
 	email text Unique
-)
+);
 
 INSERT INTO students
-VALUES (DEFAULT, 'John', 'Doe', '1990-01-15', 'john.doe@example.com')
+VALUES (DEFAULT, 'John', 'Doe', '1990-01-15', 'john.doe@example.com');
 
 INSERT INTO students
 VALUES (DEFAULT, 'Jane', 'Smith', '1992-05-20', 'jane.smith@example.com'),
@@ -22,7 +22,7 @@ CREATE TABLE teachers (
 	email text Unique,
 	department text,
 	hire_date date
-)
+);
 
 INSERT INTO teachers
 VALUES
@@ -35,11 +35,10 @@ CREATE TABLE courses (
 	course_name TEXT NOT NULL,
 	department TEXT,
 	credits NUMERIC
-)
+);
 
 INSERT INTO courses
 VALUES
   (DEFAULT, 'Introduction to Programming', 'Computer Science', 3),
   (DEFAULT, 'Calculus I', 'Mathematics', 4),
   (DEFAULT, 'World History', 'History', 3);
-
